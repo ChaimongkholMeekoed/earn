@@ -29,7 +29,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqM-u7-ZYt">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.54980456310000003" green="0.1388299566" blue="0.18840392559999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="188"/>
                                 <color key="textColor" red="0.0072753601707518101" green="0.9916955828666687" blue="0.89148390293121338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -47,18 +47,24 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="29" y="458" width="168" height="105"/>
                                 </variation>
+                                <connections>
+                                    <action selector="dec:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPl-zg-f5i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-DX-gfr">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.80539065599441528" green="0.9223218560218811" blue="0.62183672189712524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Decrease">
+                                <state key="normal" title="increase">
                                     <color key="titleColor" red="0.19851383240000001" green="0.23482318020000001" blue="0.54980456310000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0072753601707518101" green="0.9916955828666687" blue="0.89148390293121338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="195" y="458" width="175" height="105"/>
                                 </variation>
+                                <connections>
+                                    <action selector="inc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wi0-iI-wfK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82159943489999998" green="0.2476724867" blue="0.16625785169999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,6 +85,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="numberlabal" destination="nqM-u7-ZYt" id="g1h-HM-xdN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
